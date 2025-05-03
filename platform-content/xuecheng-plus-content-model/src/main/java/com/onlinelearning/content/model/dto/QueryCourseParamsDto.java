@@ -1,4 +1,4 @@
-package com.xuecheng.content.model.dto;
+package com.onlinelearning.content.model.dto;
 
 import lombok.Data;
 import lombok.ToString;

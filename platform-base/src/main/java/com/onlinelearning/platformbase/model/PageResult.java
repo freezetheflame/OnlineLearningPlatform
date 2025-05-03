@@ -1,5 +1,6 @@
 package com.onlinelearning.platformbase.model;
 
+import io.swagger.annotations.ApiModelProperty;
 import lombok.Data;
 import lombok.ToString;
 
@@ -17,15 +18,19 @@ import java.util.List;
 public class PageResult<T> implements Serializable {
 
     // 数据列表
+    @ApiModelProperty(value = "数据列表")
     private List<T> items;
 
     //总记录数
+    @ApiModelProperty(value = "总记录数",example = "1000")
     private long counts;
 
     //当前页码
+    @ApiModelProperty(value = "当前页码",example = "1")
     private long page;
 
     //每页记录数
+    @ApiModelProperty(value = "每页记录数",example = "10")
     private long pageSize;
 
     public PageResult(List<T> items, long counts, long page, long pageSize) {
